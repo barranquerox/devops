@@ -1,0 +1,16 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class SeleniumTests {
+
+  @Test
+  public void seleniumTest() {
+    WebDriver driver = new ChromeDriver();
+
+    driver.get("https://www.backmarket.fr");
+    // driver.get("https://www.axa.fr/");
+
+    driver.quit();
+  }
+}
