@@ -18,6 +18,9 @@ jobs:
           name: "Say hello"
           command: "echo Hello, Luis!"
       - run:
+          name: "Chocolatey install maven"
+          command: "choco install maven"
+      - run:
           name: "Execute Tests"
           command: "mvn test"
 
